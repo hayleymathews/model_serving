@@ -45,6 +45,8 @@ async def predict(events):
         if model_version != live_version:
             # load in new model if out of sync
             print(f"Loading new model {live_version}")
+            # model is locally saved pickled python code
+            # but more realistically this would be s3 and a much smarter rehydrating strategy
             model_location = model_table['model_location']
             model = pickle.load(open(model_location, "rb"))
             model_version = live_version
@@ -66,6 +68,8 @@ async def update_model(model_updates):
         model_location = model_update['model_location']
         print(f"Updating model to: {model_location}")
 
+        # using incrementing version number to keep track of live model
+        # but obviously doesnt work for a real distributed system 
         model_table['live_version'] += 1
         model_table['model_location'] = model_location
 
