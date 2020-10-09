@@ -15,7 +15,8 @@ faust -A model_serving worker -l info
 faust -A model_serving send events '{"some": "data"}'
 ```
 * send model updates to control stream
-```faust -A model_serving send model_updates '{"model_location" : "$MODEL_PATH"}'
+```
+faust -A model_serving send model_updates '{"model_location" : "$MODEL_PATH"}'
 ```
 
 
