@@ -1,7 +1,6 @@
 toy python implementation of the streaming machine learning model serving pattern described in Serving Machine Learning Models by Boris Lublinsky*
 
-![alt text][logo]
-[logo]: https://downloads.lightbend.com/website/blog/how-to-serve-machine-learning-models-with-dynamically-controlled-streams/image-2.png
+![diagram](https://downloads.lightbend.com/website/blog/how-to-serve-machine-learning-models-with-dynamically-controlled-streams/image-2.png)
 
 uses faust kafka streams implementation from robinhood
 
