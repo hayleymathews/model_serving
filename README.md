@@ -19,5 +19,5 @@ faust -A model_serving send events '{"some": "data"}'
 ```
 
 
-*[book](https://www.oreilly.com/library/view/serving-machine-learning/9781492024095/), [paper] (https://www.lightbend.com/blog/serve-machine-learning-models-dynamically-controlled-streams)
+*[book](https://www.oreilly.com/library/view/serving-machine-learning/9781492024095/), [paper](https://www.lightbend.com/blog/serve-machine-learning-models-dynamically-controlled-streams)
 
